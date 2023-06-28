@@ -8,7 +8,7 @@ WORKDIR /app
 RUN mkdir -p ~/minecraft_data
 
 # Copy the Docker Compose file to the container
-COPY docker-compose.yml /app
+COPY docker-compose.yaml /app
 
 # Install Docker Compose (if not already installed)
 RUN apk add --no-cache py-pip && \
